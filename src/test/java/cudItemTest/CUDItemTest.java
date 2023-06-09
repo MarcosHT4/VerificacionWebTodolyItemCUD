@@ -33,7 +33,7 @@ public class CUDItemTest {
     }
 
     @Test
-    public void verifyCreateProject() throws InterruptedException {
+    public void verifyCUDItem() throws InterruptedException {
 
         String nameProject = "Marcos CRUD" + LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
         String nameItem = "Marcos Item" + LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
