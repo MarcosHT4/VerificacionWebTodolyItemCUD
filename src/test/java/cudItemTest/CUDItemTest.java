@@ -88,7 +88,7 @@ public class CUDItemTest {
         Thread.sleep(1000);
         chrome.findElement(By.xpath("//ul[@id='itemContextMenu']//a[@href='#delete']")).click();
         Thread.sleep(1000);
-        Assertions.assertTrue(chrome.findElements(By.xpath("//div[@id='HeaderMessageInfo']")).size() == 1, "ERROR! El item no fue eliminado!");
+        Assertions.assertTrue(chrome.findElements(By.xpath("//div[@id='HeaderMessageInfo']//span[@id='InfoMessageText' and contains(text(), 'Deleted')]")).size() == 1, "ERROR! El item no fue eliminado!");
 
 
 
